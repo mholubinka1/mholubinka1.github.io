@@ -1,7 +1,8 @@
 # Site
-name: "Memoirs"
-title: "Memoirs"
-description: "I will take you on the fabulous world of exploration. Travel, culture, lifestyle. Eat, Pray, Love!"
+name: "tinkering + pandas"
+author: "Matt Holubinka"
+title: "tinkering + pandas"
+description: "I will take you on the fabulous world of exploration. Travel, culture, lifestyle. Eat, Pray, Love, Fail!"
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/logo.png'
 baseurl: ''
@@ -59,18 +60,8 @@ kramdown:
    syntax_highlighter_opts:
       disable : true
 
-
-
-# Adsense (change to "enabled" to activate, also your client id and ad slot. Create a new ad unit from your Adsense account to get the slot.)
-adsense: "disabled"
-adsense-data-ad-client: "ca-pub-3412143450191416"
-adsense-data-ad-slot: "1363087678"
-
 # Lazy Images ("enabled" or "disabled")
 lazyimages: "disabled"
-
-# Post Author Box ("enabled" or "disabled")
-authorbox: "enabled"
 
 # Sass
 sass:

@@ -2,11 +2,13 @@
 
 ---
 
-$brown: #B59F62;
-$teal: #40FFDC;
+$silver: #dcdcdc;
+$purple: #531060;
+$purple-light: #E099EE;
 $black: #111;
-$primary: $teal;
-$dark:    $black;
+$primary: $purple;
+$secondary: $purple_light;
+$dark: $black;
 $enable-rounded: false;
 
 @import "bootstrap/functions";
@@ -22,10 +24,10 @@ body, input, button, select, optgroup, textarea {
 }
 body {
     line-height:1.7;
-    background: #f4f4f4;
+    background: #f3f3f3;
 }
 a {
-    color: darken($primary, 24%);
+    color: $primary;
 }
 img {
     max-width:100%;
@@ -259,7 +261,7 @@ img, img:hover {
         font-size:22px;
         line-height:1.4;
         a { 
-            background-image: linear-gradient(180deg, transparent 89%, $primary 0);
+            background-image: linear-gradient(180deg, transparent 89%, $secondary 0);
             background-repeat: no-repeat;
             background-size: 0 100%;
             transition: background-size .6s ease;
@@ -285,7 +287,7 @@ img, img:hover {
         }
     }
     .post-date {
-        float:right;
+        float: right;
         margin-top: 10px;
     }
     .img-thumb {
@@ -341,7 +343,7 @@ img, img:hover {
         color:#000;
         cursor:pointer;
         &:hover {
-            background: $primary;
+            background: $secondary;
             text-decoration:none;
         }
     }
@@ -382,7 +384,7 @@ img, img:hover {
             color: #222;
             padding: 4px 20px;
             margin-left:-5px;
-            background:$primary;
+            background: $secondary;
             border-left: 1px solid;
             font-weight:700;
         }
@@ -424,7 +426,7 @@ img, img:hover {
         width:50px;
         border-radius:50%;
         margin-right:10px;
-        border:2px solid darken($primary,20%);
+        border:2px solid darken($secondary,20%);
         padding:2px;
     }
 }
@@ -437,7 +439,7 @@ img, img:hover {
     .author-thumb {
         width:70px;
         border-radius:50%;
-        border:2px solid darken($primary,20%);
+        border:2px solid darken($secondary,20%);
         padding:2px;
     }
 }
@@ -541,7 +543,7 @@ img, img:hover {
 .show-search {
     cursor:pointer;
     &:hover {
-        color: darken($primary,20%);
+        color: $primary;
     }
 }
 .bd-search {
@@ -710,7 +712,7 @@ body.active-side {
             width: 170px;
         }
     }
-    .article-post, .entry-header, .comments, .rating, .authorbox { 
+    .article-post, .entry-header, .comments, .authorbox { 
         padding-left:0;
         padding-right:0;
     }

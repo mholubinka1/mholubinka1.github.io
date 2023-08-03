@@ -49,17 +49,18 @@
 <div id="blackover-nav" class="blackover"></div>
 <nav id="menu">
     <ul>
-        <h3>Navigation</h3>
-        <li><a href="{{ site.baseurl }}/">Home</a></li>
-        <li><a href="{{ site.baseurl }}/about">About</a></li>
-        <li><a href="{{ site.baseurl }}/authors">Contributors <span class="badge badge-primary">new</span></a></li>
-        <li><a target="_blank" href="https://bootstrapstarter.com/jekyll-theme-memoirs/">Get Memoirs</a></li>      
-        <li><a href="{{ site.baseurl }}/contact">Contact</a></li>       
+        <h3>things to look at</h3>
+        <li><a href="{{ site.baseurl }}/">home</a></li>
+        <li><a href="{{ site.baseurl }}/authors">me</a></li>
+        <li><a href="{{ site.baseurl }}/about">projects</a></li>
+        <li><a href="{{ site.baseurl }}/about">archive</a></li>
+        <li><a href="{{ site.baseurl }}/contact">message</a></li>       
     </ul>   
 </nav>
 
 {% include search-lunr.html %}
 
+<!-- <span class="badge badge-primary">new</span>-->
 
 <!-- End Sidebar Navigation
 ================================================== -->
@@ -72,7 +73,10 @@
     ================================================== -->
    
     <a class="navbar-brand" href="{{ site.baseurl }}/">
-        <img src="{{ site.baseurl }}/{{ site.logo }}" alt="{{ site.name }}">
+        <span>
+            <img src="{{ site.baseurl }}/{{ site.logo }}" alt="{{ site.name }}">
+            <a class="h2">&nbsp; <b>{{site.name}}</b></a>
+        </span>
     </a>  
    
 
@@ -112,7 +116,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-sm-12 text-center text-lg-left">
-                Copyright © {{ site.time | date: "%Y" }} {{ site.name }} 
+                Copyright © {{ site.time | date: "%Y" }} {{ site.author }} 
             </div>
             <div class="col-md-6 col-sm-12 text-center text-lg-right">    
                 <a target="_blank" href="https://www.wowthemes.net/memoirs-free-jekyll-theme/">Memoirs Jekyll Theme</a> by WowThemes.net
